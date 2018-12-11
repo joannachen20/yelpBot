@@ -4,9 +4,9 @@
 
 * Chat room style
 
-* Input information including: search term (food, shopping, etc) and location 
+* Input information including: search term (food, shopping, item, name etc.) and location (city, state, zip, etc.)
 
-* YelpBot returns information regarding the first result
+* YelpBot returns name, street address, and rating regarding the first five results
 
 ## Getting Started - Run App Locally
 
@@ -27,4 +27,4 @@ npm install yelp-fusion
 
 npm install body-parser
 ```
-The following application attaches socket.io to a Node.JS HTTP server listening on port 3000.
+The following application attaches socket.io to a Node.JS HTTP server listening on port 4000.
