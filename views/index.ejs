@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <meta charset="utf-8">
+    <title>Yelp Search</title>
+  </head>
+  <body>
+    <div id="yelp-chat">
+      <h2>Yelp Help Chat</h2>
+      <div id="chat-window">
+      <div id="output"></div>
+    <div id="feedback"><p>
+      <% results.forEach(function(result) { %>
+    <strong>YelpBot: </strong>
+    <%= result.place %>
+    - <%= result.location %>
+    - ☆ <%= result.rating %> ☆ <br>
+    <% }); %></p></div>
+  </div>
+  <form action="/" method="post">
+    <input id="term" name="term" type="text" placeholder="Term" />
+    <input id="location" name="location" type="text" placeholder="Location" />
+    <button id="send">Send</button>
+  </form>
+    </div>
+  </body>
+  <script src="/chat.js"></script>
+</html>

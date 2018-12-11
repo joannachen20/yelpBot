@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <meta charset="utf-8">
+    <title>YelpBot</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=Ubuntu');
+    </style>
+  </head>
+  <body>
+    <div id="yelp-chat">
+      <h2>Yelp Help Chat</h2>
+      <div id="chat-window">
+      <div id="output"></div>
+      <div id="feedback"></div>
+      </div>
+      <form action="/" method="post">
+        <input id="term" name="term" type="text" placeholder="Term" />
+        <input id="location" name="location" type="text" placeholder="Location" />
+        <button id="send">Send</button>
+      </form>
+      </div>
+  </body>
+   <script src="/chat.js"></script>
+</html>
